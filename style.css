@@ -116,6 +116,16 @@ i:hover{
     
 }
 
+.mywork{
+    
+    margin-top: 64px;
+    margin-left: 64px;
+    margin-bottom: 0px;
+    margin-right: 64px;
+    padding: 15px; 
+    
+}
+
 .bonjour p, .formation p{
     max-width: 850px;
     font-family: sans-serif;
