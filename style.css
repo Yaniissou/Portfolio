@@ -163,3 +163,38 @@ i:hover{
 .formlist ul{
     margin: 0px;
 }
+
+
+/*myprojects.html*/
+
+.containerprojectlist{
+
+}
+
+.projectlist{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.projectlist img{
+    width: 240px;
+    height: 240px;
+    margin-left: 50px;
+    margin: 0 auto;
+}
+
+.containerproject{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+    
+}
+
+.containerproject p{
+    margin: 0px;
+    font-size: small;
+    margin-left: 20px;
+}
