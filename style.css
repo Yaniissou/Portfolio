@@ -9,6 +9,7 @@ body{
     flex-direction: column;
     margin: 0px;
 }
+
 .menu ul{
     display: flex;
     flex-direction: row;
@@ -18,11 +19,37 @@ body{
     line-height: 18px;
     text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
+
+.menu li{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.menu li a{
+    color: #6d56c1;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+
+.menu li a:hover{
+    color: #ce9c9cf2;
+    transition: 0.3s;
+}
+
 
 .gradient{
 background-image:
-    linear-gradient(180deg, rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95)),
+    linear-gradient(120deg, rgba(74,76,179,.95) 34%,rgba(206, 156, 156, 0.949)),
     url('assets/img/avatar.jpg');
 background-size: cover;
 left: 0;
@@ -98,7 +125,11 @@ i:hover{
     color: #fff!important;
 }
 
-.bonjour{
+.paragraphs{
+    display: flex;
+}
+
+.bonjour, .hobbies{
     
     bottom: 100px;
     margin: 64px;
@@ -126,7 +157,7 @@ i:hover{
     
 }
 
-.bonjour p, .formation p{
+.bonjour p, .hobbies p, .formation p{
     max-width: 850px;
     font-family: sans-serif;
     margin: 0px;
@@ -167,9 +198,6 @@ i:hover{
 
 /*myprojects.html*/
 
-.containerprojectlist{
-
-}
 
 .projectlist{
     display: flex;
@@ -229,7 +257,8 @@ i:hover{
 /* FOOTER */
 
 footer{
-    padding: 5em;
+    padding: 0.5em;
+    padding-top: 3em;
     color: #fff;
     background-image:
     linear-gradient(120deg, rgba(74,76,179,.95) 10%,hsla(0,34%,71%,.95)),
@@ -283,7 +312,11 @@ margin-left: auto;
     color:#fff
 }
 
-.footer_titles{
-    display: flex;
-    justify-content: space-around;
+
+.form input[type="submit"]:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+    outline: 1px solid #000;
+    opacity: 0.9;
 }
