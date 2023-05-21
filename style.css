@@ -272,6 +272,7 @@ footer{
 
 .container_footer{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     
 }
@@ -320,3 +321,31 @@ margin-left: auto;
     outline: 1px solid #000;
     opacity: 0.9;
 }
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none; }
+
+/* Make thhe li links cooler */
+.list-unstyled li a {
+    padding: 0.5em 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    transition: 0.3s; }
+
+.quicklinks_title h1{
+    color: rgb(236, 236, 236);
+}
+
+
+.list-unstyled li a:hover {
+    color: #fff;
+    padding-left: 1em;
+    transition: 0.3s; }
+
+    
