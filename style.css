@@ -127,6 +127,7 @@ i:hover{
 
 .paragraphs{
     display: flex;
+    padding: 100px;
 }
 
 .bonjour, .hobbies{
