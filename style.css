@@ -247,8 +247,15 @@ footer{
     
 }
 
-.container_form{
-    
+.container_form textarea{
+    height: 140px;
+    width: 360px;
+}
+
+.container_form textarea::placeholder{
+    font-weight: bold;
+    opacity: 0.5;
+    color: black;
 }
 
 .form_title{
