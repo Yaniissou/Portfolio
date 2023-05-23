@@ -175,6 +175,7 @@ i:hover{
     margin-right: 64px;
     padding-left: 15px;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .edutitle{
@@ -195,6 +196,7 @@ i:hover{
 .formlist ul{
     margin: 0px;
 }
+
 
 
 /*myprojects.html*/
