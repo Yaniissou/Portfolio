@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style.css">
     <title>Yanis Harkati - Mes projets</title>
+    <script src="https://kit.fontawesome.com/dc67bca876.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="menu">
@@ -14,7 +16,6 @@
                 <li><a href="../index.html">Bonjour</a></li>
                 <li><a href="../formation.html">Formation</a></li>
                 <li><a href="../myprojects.html">Mes projets</a></li>
-                <li><a href="../contact.html">Contact</a></li>
 
             </ul>
         </nav>
@@ -39,17 +40,99 @@
                         </div>
                         <div>
                             <dt>Email</dt>
-                            <dd>yanis.harkati@etu.univ-grenoble-alpes.fr</dd>
+                            <dd><a href="mailto:yanis.harkati38@gmail.com">yanis.harkati@etu.univ-grenoble-alpes.fr</a></dd>
                         </div>
                     </dl>
                 </div>
                 <div class="social_media">
                     <a href="https://github.com/Yaniissou"><i class="fa fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/yanis-harkati-995b63228/"><i class="fa fa-linkedin"></i></a>
+                    
+
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div class="javaparagraphs">
+        <a href="../myprojects.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <h1 class="java_title">Comparaison d’approches algorithmiques<br>Implémentation d’un besoin client (2022-2023)</h1>
+
+            <ul class="maininfo">
+                <li>Langage : Java </li>
+                <li>Durée : 4 jours </li>
+            </ul>
+            <p>L'objectif du projet est de créer un <strong> de classification automatique de dépêches</strong> aussi fiable et aussi rapide que
+                possible. Une dépêche est un court texte correspondant à une information journalistique, telle que : 
+            </p>
+            
+            <div class="encadre">
+                <p>Coupe de l'UEFA : l'OM victorieux, les Girondins défaits
+                    L'OM a remporté son match à domicile sur le score de 3 à
+                    0. Bordeaux a perdu dans les arrêts de jeu. 
+                </p>
+            </div>
+
+            <p class="subencadre">Le programme doit être capable de classer automatiquement une dépêche dans une des catégories suivantes :
+                <ul class="liste">
+                    <strong><li>Politique</li>
+                    <li>Sport</li>
+                    <li>Sciences</li>
+                    <li>Divertissement</li>
+                    <li>Autres</li></strong>
+                </ul>
+
+                <p>La tâche principale consiste à classer des documents dans différentes catégories en se basant sur les mots qui indiquent leur appartenance à une catégorie spécifique. 
+                    Pour cela, nous créons des lexiques pour chaque catégorie, composés de mots "marqueurs" et associés à des poids. 
+                    Les poids représentent le degré avec lequel chaque mot indique l'appartenance à une catégorie, variant de 1 (faible indication) à 3 (forte indication).
+                </p>
+
+                <p>À travers ce projet, j'ai pu</p>
+                <ul class="liste">
+                    <li><strong>Parfaire ma pratique de Java</strong></li>
+                    <li>Apprendre à utiliser des algorithmes de tri</li>
+                    <li>Utiliser Java dans un contexte donné</li>
+                
+                </ul>
         </div>
 
 
 </body>
+<footer>
+
+    
+
+    <div class="container_footer">
+        <div class="quicklinks">
+            <div class="quicklinks_title">
+                <h1>Navigation</h1>
+                <ul class="list-unstyled">
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./formation.html">Formation</a></li>
+                    <li><a href="./myprojects.html">Mes Projets</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container_form">
+            <h1 class="form_title">Contactez-moi</h1>
+            <form action="" method="get" class="form">
+                <div class="form">
+                    <input class="form-name" type="text" placeholder="Votre nom" required="">
+                </div>
+                <div class="form">
+                  <input class="form-mail" type="email" name="email" placeholder="Votre email" id="email" required="">
+                </div>
+                <div class="form">
+                    <textarea class="form-message" placeholder="Votre message" required=""></textarea>
+                </div>
+                <div class="form">
+                  <input type="submit" value="Envoyer">
+                </div>
+              </form>
+        </div>
+    </div>
+    
+</footer>
 </html>
