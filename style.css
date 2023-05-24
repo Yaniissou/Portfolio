@@ -428,6 +428,22 @@ margin-left: auto;
     font-weight: bold;
 }
 
+.link{
+    color: #6d56c1;
+}
+.link:visited{
+    color: #6d56c1;
+}
+
+.link:active{
+    color:#8f82be;
+}
+
+.link:hover{
+    color:#8f82be;
+  
+}
+
 
 
 
