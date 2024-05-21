@@ -21,8 +21,11 @@
         </nav>
 
         <div class="intro">
-            <span class="start radio-canada-big">Je suis </span>
-            <span class="name dm-serif-display-regular">Yanis Harkati</span>
+            <div class="firstline">
+                <span class="start radio-canada-big">Je suis </span>
+                <span class="name dm-serif-display-regular">Yanis Harkati</span>
+            </div>
+
             <span class="end">Développeur Java et Web</span>
             <button class="button-87" role="button">Me contacter</button>
         </div>
@@ -67,5 +70,64 @@
             </div>
         </div>
     </section>
+
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Projets</h2>
+            <div class="project-cards">
+                <div class="project-card" onclick="openModal('modaluhcworld')">
+                    <img src="assets/img/uhcworld.jpeg" alt="UHC World">
+                    <div class="overlay">
+                        <h3>UHC World</h3>
+                        <p>Développer, et maintenir un serveur Minecraft</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/img/biboule.png" alt="GazePlay">
+                    <div class="overlay">
+                        <h3>GazePlay</h3>
+                        <p>Développement, amélioration et implémentation de jeux sérieux et fonctionnalités dans un logiciel pour des personnes en situation de handicap</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Serious Game">
+                    <div class="overlay">
+                        <h3>Serious Game</h3>
+                        <p>Concevoir et réaliser un site web ludo-éducatif professionnel</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="project2.jpg" alt="GameJam 2023">
+                    <div class="overlay">
+                        <h3>GameJam 2023</h3>
+                        <p>100 étudiants, 26 équipes, TOP 3</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Suki">
+                    <div class="overlay">
+                        <h3>SUKI</h3>
+                        <p>Réaliser une application de gestion de sorties de ski</p>
+                    </div>
+                </div>
+
+                
+                    <!-- Modale 1 -->
+                <div id="modaluhcworld" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal1')">&times;</span>
+                        <h2>UHC World</h2>
+                        <p>Voici quelques détails supplémentaires sur la Carte 1.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>        
+    </section>
 </body>
+<script src="index.js"></script>
 </html>
