@@ -15,3 +15,14 @@ window.onclick = function(event) {
         }
     }
 }
+
+
+//Announcement bar js
+document.addEventListener('DOMContentLoaded', () => {
+    const closeBtn = document.querySelector('.close-btn');
+    const banner = document.querySelector('.announcement-banner');
+
+    closeBtn.addEventListener('click', () => {
+        banner.style.display = 'none';
+    });
+});

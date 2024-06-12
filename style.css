@@ -1,7 +1,40 @@
+.announcement-banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.announcement-banner p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.announcement-banner a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 60px; /* Adjust this if your banner's height changes */
+    padding: 20px;
+}
+
+
+
+
+
+
 /* Default color text */
 body {
     color: #ffffff; /* Remplacez #333333 par la couleur de votre choix */
     background-color: #38343c;
+    margin: 0;
 
 }
 
