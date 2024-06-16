@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/7e3baea686.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="announcement-banner">
-        <p>⚠️ Important : Ce portfolio est en cours de réalisation, vous risqueriez de tomber sur du contenu non abouti</p>
-    </div>
+
 
 
     <div class="bg">
         <nav class="navbar">
-            <div class="logo">LogoPlaceholder</div>
+            <div class="logo"><i class="fa-brands fa-y-combinator"></i></div>
             <ul class="navlist">
                 <li><a href="#about">À propos</a></li>
-                <li><a href="#portfolio">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li onclick="openModal('contactModal')"><a>Contact</a></li>
             </ul>
         </nav>
 
@@ -32,7 +32,7 @@
             </div>
 
             <span class="end">Développeur Java et Web</span>
-            <button class="button-87" role="button">Me contacter</button>
+            <button class="button-87" role="button" onclick="openModal('contactModal')">Me contacter</button>
         </div>
     </div>
 
@@ -88,7 +88,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card"  onclick="openModal('modalgazeplay')">
                     <img src="assets/img/biboule.png" alt="GazePlay">
                     <div class="overlay">
                         <h3>GazePlay</h3>
@@ -96,29 +96,31 @@
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <img src="project1.jpg" alt="Serious Game">
+                <div class="project-card "  onclick="openModal('modalseriousgame')">
+                    <img src="./assets/img/seriousgame.png" alt="Serious Game">
                     <div class="overlay">
-                        <h3>Serious Game</h3>
+                        <h3>Serious Game - ChronoTravel</h3>
                         <p>Concevoir et réaliser un site web ludo-éducatif professionnel</p>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <img src="project2.jpg" alt="GameJam 2023">
+                <div class="project-card" onclick="openModal('modalgamejam')">
+                    <img src="assets/img/gamejam.png" alt="GameJam 2023">
                     <div class="overlay">
                         <h3>GameJam 2023</h3>
                         <p>100 étudiants, 26 équipes, TOP 3</p>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <img src="project2.jpg" alt="Suki">
+                <div class="project-card" onclick="openModal('modalsuki')">
+                    <img src="assets/img/suki.png" alt="Suki">
                     <div class="overlay">
                         <h3>SUKI</h3>
                         <p>Réaliser une application de gestion de sorties de ski</p>
                     </div>
                 </div>
+
+   
 
                 
                     <!-- Modale 1 -->
@@ -142,30 +144,111 @@
                     </div>
                 </div>
 
-                    <!-- Modale 2 -->
-                    <div id="modalgazeplay" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('modalgazeplay')">&times;</span>
-                            <h2>GazePlay <img src="assets/img/gazeplayClassicLogo.png" alt="GazePlay Icon" class="icon" style="height:5%; width: 5%;"></h2>
-                            <p>
-                                Lors de mon stage au Laboratoire d'Informatique de Grenoble, j'ai eu l'opportunité de travailler sur GazePlay, une application lourde en JavaFX dédiée aux jeux sérieux. 
-                                GazePlay est spécifiquement conçue pour les personnes handicapées qui utilisent un eye tracker pour interagir avec un ordinateur.
-                            </p>
+                <!-- Modale 2 -->
+                <div id="modalgazeplay" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modalgazeplay')">&times;</span>
+                        <h2>GazePlay <img src="assets/img/gazeplayClassicLogo.png" alt="GazePlay Icon" class="icon" style="height:5%; width: 5%;"></h2>
+                        <p>
+                            Lors de mon stage au Laboratoire d'Informatique de Grenoble, j'ai eu l'opportunité de travailler sur GazePlay, une application lourde en JavaFX dédiée aux jeux sérieux. 
+                            GazePlay est spécifiquement conçue pour les personnes handicapées qui utilisent un eye tracker pour interagir avec un ordinateur.
+                        </p>
 
-                            <p>Mon rôle principal consistait à fixer des problèmes et des bugs dans l'application, assurant ainsi une expérience utilisateur fluide et sans accroc. 
-                                En parallèle, j'ai également contribué à l'ajout de nouveaux jeux dans GazePlay, enrichissant ainsi la diversité et l'accessibilité de l'application.
-                            </p>
+                        <p>Mon rôle principal consistait à fixer des problèmes et des bugs dans l'application, assurant ainsi une expérience utilisateur fluide et sans accroc. 
+                            En parallèle, j'ai également contribué à l'ajout de nouveaux jeux dans GazePlay, enrichissant ainsi la diversité et l'accessibilité de l'application.
+                        </p>
 
-                            <p>Ces jeux sont spécialement conçus pour être contrôlés via la technologie de suivi oculaire, permettant aux utilisateurs de jouer et de bénéficier de l'application malgré leurs limitations physiques. 
-                                Mon travail comprenait non seulement l'implémentation technique des jeux, mais aussi l'assurance qu'ils soient intuitifs et adaptés aux besoins des utilisateurs.
-                            </p>
+                        <p>Ces jeux sont spécialement conçus pour être contrôlés via la technologie de suivi oculaire, permettant aux utilisateurs de jouer et de bénéficier de l'application malgré leurs limitations physiques. 
+                            Mon travail comprenait non seulement l'implémentation technique des jeux, mais aussi l'assurance qu'ils soient intuitifs et adaptés aux besoins des utilisateurs.
+                        </p>
 
-                            <p>Ce stage m'a offert une expérience enrichissante en développement logiciel, notamment en JavaFX, 
-                                ainsi qu'une profonde satisfaction en contribuant à un projet qui améliore la qualité de vie des personnes handicapées.
-                            </p>
+                        <p>Ce stage m'a offert une expérience enrichissante en développement logiciel, notamment en JavaFX, 
+                            ainsi qu'une profonde satisfaction en contribuant à un projet qui améliore la qualité de vie des personnes handicapées.
+                        </p>
 
-                        </div>
                     </div>
+                </div>
+
+                <!-- Modale 3 -->
+                <div id="modalseriousgame" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modalseriousgame')">&times;</span>
+                        <h2>Serious Game</h2>
+                        <p>
+                            Dans le cadre de notre semestre 3 en BUT Informatique, nous avons développé un serious game éducatif pour les élèves de collège. Ce projet vise à rendre l'apprentissage de l'histoire ludique et engageant.
+                        </p>
+                        <p>
+                            Notre jeu est une compétition de QCM d'histoire où les joueurs avancent sur un plateau en répondant correctement à des questions. Ce format compétitif encourage les élèves à apprendre en s'amusant.
+                        </p>
+                        <p>
+                            Pour le développement, nous avons suivi une démarche itérative, en partant d'une analyse des besoins et en collaborant avec des enseignants pour concevoir le contenu pédagogique et ludique.
+                        </p>
+                        <p>
+                            Ce projet nous a permis de mobiliser des compétences variées en développement web, analyse, qualité logicielle, gestion de données et communication professionnelle. Nous avons utilisé des technologies telles que HTML, CSS, JavaScript, PHP, Talend, et Git pour mener à bien ce projet.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Modale 4 -->
+                <div id="modalgamejam" class="modal">
+                    <div class="modal-content">
+                        <h2>GameJam 2023</h2>
+                        <p>
+                            Lors de la GameJam 2023, qui a réuni 100 étudiants, notre équipe a terminé dans le TOP 3 avec un jeu unique et captivant. Le thème de cette année était "Le monde merveilleux de l'IUT 2", mais nous avons décidé de prendre une direction originale en créant un jeu d'horreur.
+                        </p>
+                        <p>
+                            Dans notre jeu, les joueurs doivent esquiver les professeurs dans le noir pour voler des sujets d'examens. Ce concept innovant a été très bien reçu.
+                        </p>
+                        <p>
+                            Pour le développement, nous avons utilisé Python avec la bibliothèque Pygame. Cette expérience nous a permis de mettre en pratique nos compétences en programmation et de travailler efficacement en équipe sous pression.
+                        </p>
+                        <p>
+                            La GameJam 2023 a été une opportunité incroyable de repousser nos limites et de créer un projet dont nous sommes fiers, tout en apprenant et en nous amusant.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div id="modalsuki" class="modal">
+                    <div class="modal-content">
+                        <h2>SUKI</h2>
+                        <p>
+                            Le projet SUKI est une application fictive que nous avons entièrement créée et inventée. Elle permet d'organiser et de réserver des sorties ski à la journée dans diverses stations. Chaque sortie est caractérisée par plusieurs facteurs, tels que la date, le type de sortie, le niveau requis, et le nombre de places disponibles.
+                        </p>
+                        <p>
+                            La société fictive proposant ces sorties se charge de réserver les forfaits de ski, le moniteur, et le matériel (fixations, chaussures, skis, et bâtons) pour chaque participant, en fonction de leur poids, taille, pointure, niveau, et type de pratique. Les sorties peuvent inclure le ski de piste, le ski freeride, et le ski freestyle.
+                        </p>
+                        <p>
+                            L'application SUKI, développée en Java et JavaFX, permet de gérer efficacement la création, la modification, et la suppression des sorties et des moniteurs. Une sortie est disponible si et seulement s'il reste des places, si elle se déroule au moins 48h plus tard, et si elle n'est pas annulée.
+                        </p>
+                        <p>
+                            Notre objectif est de permettre aux Écoles de Ski Françaises de diversifier leur offre et de toucher de nouveaux clients. Avec SUKI, la création de sorties sur mesure devient simple et intuitive, facilitant la gestion des réservations et des annulations en cas de mauvais temps ou d'aléas organisationnels.
+                        </p>
+                        <p>
+                            Ce projet nous a permis de mettre en pratique nos compétences en développement d'applications lourdes, en utilisant Java et JavaFX.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div id="contactModal" class="modal">
+                    <div class="modal-content modalcontact">
+                        <h2>Formulaire de Contact</h2>
+                        <form id="contactForm">
+                            <label for="name">Nom:</label>
+                            <input type="text" id="name" name="name" required>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
                 
             </div>
         </div>        
